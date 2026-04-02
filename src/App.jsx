@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import BiodataDiri from './latihanp2/BiodataDiri'
+import FormBudget from './latihanp3/FormBudget'
+
 import './App.css'
 
 function App() {
