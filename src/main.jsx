@@ -2,12 +2,24 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import './latihanp3/tailwind.css'
-import FormBudget from './latihanp3/FormBudget'
+import TugasPert3 from './tugaspert3/FormBudget.jsx'
+import BiodataDiri from './latihanp2/BiodataDiri'
 
-createRoot(document.getElementById('root')).render(
+const root = createRoot(document.getElementById('root'))
+const pathname = window.location.pathname
+
+let componentToRender
+
+if (pathname === '/tugaspert3' || pathname === '/tugaspert3/') {
+  componentToRender = <TugasPert3 />
+} else if (pathname === '/biodata') {
+  componentToRender = <BiodataDiri />
+} else {
+  componentToRender = <App />
+}
+
+root.render(
   <StrictMode>
-    <App />
-    <FormBudget/>
-  </StrictMode>,
+    {componentToRender}
+  </StrictMode>
 )
