@@ -5,6 +5,7 @@ import App from './App.jsx'
 import TugasPert3 from './tugaspert3/FormBudget.jsx'
 import BiodataDiri from './latihanp2/BiodataDiri'
 
+
 const root = createRoot(document.getElementById('root'))
 const pathname = window.location.pathname
 
