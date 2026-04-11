@@ -9,6 +9,7 @@ const FilterBar = ({ categories, selectedCategory, setSelectedCategory, cities, 
           onChange={(e) => setSelectedCategory(e.target.value)}
           className="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-lg shadow-sm border bg-white cursor-pointer"
         >
+            
           <option value="">Semua Kategori</option>
           {categories.map((category) => (
             <option key={category} value={category}>

@@ -58,4 +58,5 @@ const CafeCard = ({ cafe }) => {
   );
 };
 
-export default CafeCard;
+export default CafeCard; 
+

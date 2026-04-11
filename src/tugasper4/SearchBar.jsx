@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const SearchBar = ({ searchTerm, setSearchTerm }) => {
   return (
     <div className="w-full max-w-md">

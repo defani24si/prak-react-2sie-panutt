@@ -96,4 +96,5 @@ const CafeTable = ({ cafes }) => {
   );
 };
 
+
 export default CafeTable;

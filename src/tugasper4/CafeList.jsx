@@ -101,6 +101,7 @@ const CafeList = () => {
             )}
           </div>
         ) : (
+            
           <CafeTable cafes={filteredCafes} />
         )}
       </div>
