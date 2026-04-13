@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   margin: 0;
@@ -82,4 +85,19 @@ body {
     background-color: #f9f9f9;
     color: #213547;
   }
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('/fonts/Barlow-Regular.ttf');
+}
+
+@theme {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-barlow: 'Barlow', sans-serif;
 }
