@@ -1,26 +1,20 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
-import TugasPert3 from './tugaspert3/FormBudget.jsx'
-import BiodataDiri from './latihanp2/BiodataDiri'
+import Sidebar from './pertemuan-5/layouts/Sidebar.jsx'
+import './pertemuan-5/assets/tailwind.css'
 
-
-const root = createRoot(document.getElementById('root'))
-const pathname = window.location.pathname
-
-let componentToRender
-
-if (pathname === '/tugaspert3' || pathname === '/tugaspert3/') {
-  componentToRender = <TugasPert3 />
-} else if (pathname === '/biodata') {
-  componentToRender = <BiodataDiri />
-} else {
-  componentToRender = <App />
-}
-
-root.render(
+createRoot(document.getElementById('root')).render(
   <StrictMode>
-     {componentToRender}
+    <BrowserRouter>
+      <div className="bg-[#f3f4f6] min-h-screen flex font-poppins text-gray-800">
+        <Sidebar />
+        <div className="flex-1 p-4 overflow-y-auto">
+          <App />
+        </div>
+      </div>
+    </BrowserRouter>
   </StrictMode>
 )
