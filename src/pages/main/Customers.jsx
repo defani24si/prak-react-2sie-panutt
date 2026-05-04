@@ -1,6 +1,6 @@
 import { useState } from "react";
-import PageHeader from "../components/PageHeader";
-import customersData from "../data/customers.json";
+import PageHeader from "../../components/PageHeader";
+import customersData from "../../pertemuan-5/data/customers.json";
 
 const LOYALTY_COLOR = {
   Gold: "bg-yellow-100 text-yellow-700",

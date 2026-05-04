@@ -2,6 +2,8 @@ import { Routes, Route } from "react-router-dom";
 // import Dashboard from "./pertemuan-5/pages/main/Dashboard";
 
 import React, { Suspense, useState } from "react";
+// import ProductDetail from "./pages/main/ProductDetail";
+// import CustomerDetail from "./pages/main/CustomerDetail";
 // import Loading from "./components/Loading";
 // import Orders from "./pertemuan-5/pages/main/Orders";
 // import Header from "./pertemuan-5/components/Header";
@@ -30,6 +32,10 @@ const Login = React.lazy(() => import("./pages/auth/Login"));
 const Register = React.lazy(() => import("./pages/auth/Register"));
 const Forgot = React.lazy(() => import("./pages/auth/Forgot"));
 const Loading = React.lazy(() => import("./components/Loading"));
+const CustomerDetail = React.lazy(() => import("./pages/main/CustomerDetail"));
+const ProductDetail = React.lazy(() => import("./pages/main/ProductDetail"));
+const Products = React.lazy(() => import("./pages/main/Products"));
+
 
 function App() {
   return (
@@ -39,6 +45,9 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/customers" element={<Customers />} />
+          <Route path="/customers/:id" element={<CustomerDetail/>} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDetail />} /> 
           <Route path="/error/400" element={<Error400 />} />
           <Route path="/error/401" element={<Error401 />} />
           <Route path="/error/403" element={<Error403 />} />

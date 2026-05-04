@@ -1,6 +1,6 @@
 import { useState } from "react";
-import PageHeader from "../components/PageHeader";
-import ordersData from "../data/orders.json";
+import PageHeader from "../../components/PageHeader";
+import ordersData from "../../pertemuan-5/data/orders.json";
 
 const STATUS_COLOR = {
   Completed: "bg-green-100 text-green-700",
