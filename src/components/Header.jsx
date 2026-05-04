@@ -79,7 +79,7 @@ export default function Header() {
           className="flex items-center space-x-4 border-l pl-4 border-gray-300"
         >
           <span id="profile-text" className="text-gray-700">
-            Hello, <b className="font-bold">Fikri Muhaffizh</b>
+            Hello, <b className="font-bold">Panutt</b>
           </span>
           <img
             id="profile-avatar"
