@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import PageHeader from "../../components/PageHeader";
 import produkData from "../data/produkData.json";
+import Card from "../../components/Card";
 
 const CATEGORY_COLOR = {
   beauty: "bg-pink-100 text-pink-700",
@@ -13,7 +14,7 @@ const CATEGORY_COLOR = {
 
 export default function Products() {
   return (
-    <div className="flex flex-col w-full">
+    <Card>
       <PageHeader title="Products" breadcrumb="Product List" />
 
       <div className="mt-4 bg-white rounded-2xl shadow-sm border border-gray-50 overflow-hidden">
@@ -66,6 +67,6 @@ export default function Products() {
           </table>
         </div>
       </div>
-    </div>
+    </Card>
   );
 }
