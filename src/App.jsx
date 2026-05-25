@@ -36,6 +36,7 @@ const CustomerDetail = React.lazy(() => import("./pages/main/CustomerDetail"));
 const ProductDetail = React.lazy(() => import("./pages/main/ProductDetail"));
 const Products = React.lazy(() => import("./pages/main/Products"));
 const Components = React.lazy(() => import("./pages/main/Components"));
+const FiturXyz = React.lazy(() => import("./pages/main/FiturXyz"));
 
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
           <Route path="/error/401" element={<Error401 />} />
           <Route path="/error/403" element={<Error403 />} />
           <Route path="/components" element={<Components />} />
+          <Route path="/fitur-xyz" element={<FiturXyz />} />
           <Route path="*" element={<NotFound />} />
         </Route>
 

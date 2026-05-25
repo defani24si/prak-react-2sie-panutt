@@ -57,6 +57,11 @@ export default function Sidebar() {
               <FaBoxOpen className="text-xl mr-3" /> components
             </NavLink>
           </li>
+                 <li>
+            <NavLink id="menu-4" to="/fitur-xyz" className={menuClass}>
+              <FaBoxOpen className="text-xl mr-3" /> Fitur XYZ
+            </NavLink>
+          </li>
           <li className="pt-2">
             <p className="px-4 text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Error Pages</p>
           </li>
